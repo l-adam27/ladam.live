@@ -1,2 +1,1 @@
-# ladam.live
-My website
+# ladam.tech
