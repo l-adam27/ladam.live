@@ -1,0 +1,187 @@
+/* ===========================
+   ESTILOS GERAIS
+=========================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+/* SIDEBAR discreta */
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 200px;
+  background: #0d0d0d;
+  border-right: 1px solid rgba(255,255,255,.08);
+  padding: 24px 18px;
+}
+
+.sidebar .logo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar nav a {
+  color: #cfcfcf;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.sidebar nav a:hover {
+  background: #161616;
+  color: #fff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.page {
+  margin-left: 220px;
+  padding: 24px;
+}
+
+.page main {
+  max-width: 760px;
+  margin: 0 auto;   /* centraliza */
+  padding: 24px 16px;
+}
+
+/* ===========================
+   HERO / TOPO CENTRALIZADO
+=========================== */
+.hero {
+  text-align: center;
+  max-width: 680px;
+  margin: 40px auto 70px auto;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #bfbfbf;
+  font-size: 15px;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+main section {
+  background: #020617;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+/* ===========================
+   SHOWCASE / PROJETOS
+=========================== */
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+/* Área da imagem */
+.image-area {
+  position: relative;
+}
+
+.image-area img {
+  width: 100%;
+  height: 300px; /* imagem menor */
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid #1f2937;
+}
+
+/* Botões ao lado da imagem */
+.button-stack {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.top-buttons,
+.bottom-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button-stack button {
+  background: #111827;
+  border: 1px solid #374151;
+  color: #f9fafb;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .25s ease;
+  font-size: .9rem;
+}
+
+.button-stack button:hover {
+  background: #1f2937;
+}
+
+/* TEXTO AO LADO EM TELAS GRANDES */
+@media (min-width: 820px) {
+  .showcase {
+    grid-template-columns: 60% 40%;
+    align-items: center;
+  }
+}
+
+.showcase-text h3 {
+  margin: 0 0 8px;
+}
+
+/* ===========================
+   REVEAL AO ROLAR
+=========================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: .6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================
+   RODAPÉ #############
+/* =========================== */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: #9ca3af; /* cinza suave */
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #f1f5f9; /* branco suave */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

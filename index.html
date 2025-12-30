@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ladam.live</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- SIDEBAR discreta -->
+<aside class="sidebar">
+  <div class="logo">LAdam</div>
+  <nav>
+    <a href="#topo">Home</a>
+    <a href="#projetos">Projetos</a>
+    <a href="/projetos/keyflow.html">KeyFlow</a>
+    <a href="#contact">Contato</a>
+  </nav>
+</aside>
+
+<div class="page">
+
+<!-- TOPO CENTRALIZADO -->
+<header id="topo" class="hero">
+  <h1>Hi, I'm Leonardo Adam</h1>
+  <p>I created this website to showcase my projects, experiments and story.</p>
+</header>
+
+<main>
+
+  <!-- ABOUT ME -->
+  <section>
+    <h2>About me</h2>
+    <p>
+      I'm a passionate developer who loves creating innovative solutions.
+      Currently learning Python, hardware and general coding.
+    </p>
+  </section>
+
+  <!-- SHOWCASE / PROJETOS -->
+  <section id="projetos" class="reveal">
+    <h2>Projetos</h2>
+
+    <div class="showcase">
+
+      <!-- IMAGEM + BOTÕES -->
+      <div class="image-area">
+
+        <img id="projImg" src="img/placeholder_1.jpg" alt="Project">
+
+        <div class="button-stack">
+
+          <div class="top-buttons">
+            <button id="prevBtn" class="btn arrow">←</button>
+            <button id="nextBtn" class="btn arrow">→</button>
+          </div>
+
+          <div class="bottom-buttons">
+            <button id="githubBtn" class="btn primary">GitHub</button>
+            <button id="projectPageBtn" class="btn success">Project Page</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- TEXTO -->
+      <div class="showcase-text">
+        <h3 id="projTitle"></h3>
+        <p id="projDesc"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <p>Email: leonardo.adam27@gmail.com</p>
+  </section>
+
+</main>
+</div>
+
+<footer class="footer">
+  <p>
+    Check out my projects on 
+    <a href="https://github.com/l-adam27" target="_blank">
+      GitHub
+    </a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
