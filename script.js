@@ -20,18 +20,18 @@ onScroll();
 =========================== */
 const projects = [
   {
-    title: "KeyFlow — Mini Teclado Custom",
-    desc: "Teclado com knob, software próprio e layout programável.",
-    img: "img/placeholder_1.jpg",
+    title: "KeyFlow — Programmable Macro Keyboard",
+    desc: "Customizable keyboard with knob, own software and entirely programmable layout.",
+    img: "placeholder_1.jpg",
     github: "https://github.com/l-adam27/KeyFlow",
-    page: "/projetos/keyflow.html"
+    page: "keyflow.html"
   },
   {
     title: "PROJETO 2",
     desc: "Descrição curta do projeto 2 aqui.",
-    img: "img/placeholder_2.jpg",
+    img: "placeholder_2.jpg",
     github: "https://github.com/seu-usuario/ladam-live",
-    page: "/projetos/projeto2.html"
+    page: "projeto2.html"
   }
 ];
 
